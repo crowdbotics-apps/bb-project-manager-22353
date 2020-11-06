@@ -27,8 +27,18 @@ export class Blank extends React.Component {
         <View style={styles.View_7}>
           <View>
             <Button title="Dashboard" onPress={() => alert("Pressed!")} />
-            <Button title="Aufgaben" onPress={() => alert("Pressed!")} />
-            <Button title="Profil" onPress={() => alert("Pressed!")} />
+            <Button
+              title="Aufgaben"
+              onPress={() =>
+                this.props.navigation.navigate("BlankScreen2168488")
+              }
+            />
+            <Button
+              title="Profil"
+              onPress={() =>
+                this.props.navigation.navigate("BlankScreen3168489")
+              }
+            />
           </View>
           <View>
             <Text>Dashboard</Text>
@@ -49,6 +59,15 @@ const styles = StyleSheet.create({
   Button_16: {},
   Button_11: {},
   View_9: {},
+  View_1: { flexDirection: "row", flexWrap: "nowrap" },
+  View_3: {},
+  View_7: { flexDirection: "row" },
+  View_8: {},
+  Button_13: {},
+  Button_16: {},
+  Button_11: {},
+  View_9: {},
+  Text_22: {},
   View_1: { flexDirection: "row", flexWrap: "nowrap" },
   View_3: {},
   View_7: { flexDirection: "row" },
