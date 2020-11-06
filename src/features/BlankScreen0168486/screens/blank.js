@@ -42,6 +42,10 @@ export class Blank extends React.Component {
           </View>
           <View>
             <Text>Dashboard</Text>
+            <View>
+              <View style={styles.View_33} />
+              <View style={styles.View_34} />
+            </View>
           </View>
         </View>
       </View>
@@ -76,7 +80,19 @@ const styles = StyleSheet.create({
   Button_16: {},
   Button_11: {},
   View_9: {},
-  Text_22: {}
+  Text_22: {},
+  View_1: { flexDirection: "row", flexWrap: "nowrap" },
+  View_3: {},
+  View_7: { flexDirection: "row" },
+  View_8: {},
+  Button_13: {},
+  Button_16: {},
+  Button_11: {},
+  View_9: {},
+  Text_22: {},
+  View_32: {},
+  View_33: { flexDirection: "row" },
+  View_34: { flexDirection: "row" }
 })
 
 function mapStateToProps(state) {
