@@ -30,7 +30,9 @@ export class Blank extends React.Component {
             <Button title="Aufgaben" onPress={() => alert("Pressed!")} />
             <Button title="Profil" onPress={() => alert("Pressed!")} />
           </View>
-          <View />
+          <View>
+            <Text>Dashboard</Text>
+          </View>
         </View>
       </View>
     </View>
@@ -46,7 +48,16 @@ const styles = StyleSheet.create({
   Button_13: {},
   Button_16: {},
   Button_11: {},
-  View_9: {}
+  View_9: {},
+  View_1: { flexDirection: "row", flexWrap: "nowrap" },
+  View_3: {},
+  View_7: { flexDirection: "row" },
+  View_8: {},
+  Button_13: {},
+  Button_16: {},
+  Button_11: {},
+  View_9: {},
+  Text_22: {}
 })
 
 function mapStateToProps(state) {
