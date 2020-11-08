@@ -23,31 +23,22 @@ export class Blank extends React.Component {
   state = {}
   render = () => (
     <View style={styles.View_1}>
-      <View>
-        <View style={styles.View_7}>
-          <View>
-            <Button title="Dashboard" onPress={() => alert("Pressed!")} />
-            <Button
-              title="Aufgaben"
-              onPress={() =>
-                this.props.navigation.navigate("BlankScreen2168488")
-              }
-            />
-            <Button
-              title="Profil"
-              onPress={() =>
-                this.props.navigation.navigate("BlankScreen3168489")
-              }
-            />
-          </View>
-          <View>
-            <Text>Dashboard</Text>
-            <View>
-              <View style={styles.View_33} />
-              <View style={styles.View_34} />
+      <View style={styles.View_5}>
+        <View style={styles.View_6}>
+          <View style={styles.View_11}>
+            <View style={styles.View_12}>
+              <View style={styles.View_26}>
+                <View style={styles.View_27}>
+                  <Text style={styles.Text_15}>Offene Aufgaben</Text>
+                  <Text>Sample text content</Text>
+                </View>
+              </View>
             </View>
+            <View style={styles.View_13} />
+            <View style={styles.View_14} />
           </View>
         </View>
+        <View style={styles.View_7} />
       </View>
     </View>
   )
@@ -92,7 +83,24 @@ const styles = StyleSheet.create({
   Text_22: {},
   View_32: {},
   View_33: { flexDirection: "row" },
-  View_34: { flexDirection: "row" }
+  View_34: { flexDirection: "row" },
+  View_1: { flexDirection: "column", flexWrap: "nowrap" },
+  View_5: { width: "100%", height: "10%" },
+  View_6: { width: "100%" },
+  View_11: { width: "100%", flexDirection: "row" },
+  View_12: { width: "33%" },
+  View_26: {
+    width: "100%",
+    flexDirection: "row",
+    borderColor: "#6e6e6e",
+    borderWidth: 1
+  },
+  View_27: { width: "100%" },
+  Text_15: { width: "100%", height: 100, borderColor: "#454545" },
+  Text_25: {},
+  View_13: { width: "33%" },
+  View_14: { width: "33%" },
+  View_7: { width: "100%", alignSelf: "flex-start" }
 })
 
 function mapStateToProps(state) {
